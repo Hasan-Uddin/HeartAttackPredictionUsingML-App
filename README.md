@@ -57,3 +57,24 @@ jupyter notebook train_model.ipynb
 ```bash
 streamlit run app.py
 
+## 🛠️ Technologies Used
+- Python
+- Scikit-learn
+- Pandas
+- Streamlit
+- Joblib
+- Jupyter Notebook
+
+✅ Future Improvements
+Add model performance metrics in UI
+
+Deploy on Streamlit Cloud or Hugging Face Spaces
+
+Add login/user tracking for health records
+
+Visualize prediction confidence
+
+🙏 Acknowledgements
+Kaggle for the dataset
+
+Open-source ML community for tools and inspiration
