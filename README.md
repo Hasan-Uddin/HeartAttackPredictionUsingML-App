@@ -42,7 +42,7 @@ Sourced from [Kaggle]([https://www.kaggle.com/](https://www.kaggle.com/datasets/
 1. **Clone the repository**
 ```bash
 git clone https://github.com/yourusername/heart_attack_predictor.git
-cd heart_attack_predictor
+cd heart_attack_predictor```
 
 2. **Install dependencies**
 ```bash
