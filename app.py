@@ -22,12 +22,12 @@ if page == "Heart Attack Predictor":
     # --- User Inputs ---
     age = st.slider("Age", 20, 100)
     gender = st.selectbox("Gender", ["Male", "Female"])
-    heart_rate = st.number_input("Heart Rate (bpm)", min_value=40)
-    sys_bp = st.number_input("Systolic BP", min_value=70)
-    dia_bp = st.number_input("Diastolic BP", min_value=40)
-    sugar = st.number_input("Blood Sugar (mg/dL)")
-    ckmb = st.number_input("CK-MB")
-    troponin = st.number_input("Troponin")
+    heart_rate = st.number_input("Heart Rate (bpm)", min_value=40.0, format="%.3f", step=0.001)
+    sys_bp = st.number_input("Systolic BP", min_value=70.0, format="%.3f", step=0.001)
+    dia_bp = st.number_input("Diastolic BP", min_value=40.0, format="%.3f", step=0.001)
+    sugar = st.number_input("Blood Sugar (mg/dL)", format="%.3f", step=0.001)
+    ckmb = st.number_input("CK-MB", format="%.3f", step=0.001)
+    troponin = st.number_input("Troponin", format="%.3f", step=0.001)
 
     # --- Prediction ---
     if st.button("Predict"):
