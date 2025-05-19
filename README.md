@@ -40,4 +40,22 @@ Sourced from [Kaggle](https://www.kaggle.com/datasets/fatemehmohammadinia/heart-
 ```bash
 git clone https://github.com/yourusername/heart_attack_predictor.git
 cd heart_attack_predictor
-2. Install dependencies
+```
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+### 3. Train the model
+```bash
+cd model
+jupyter notebook train_model.ipynb
+```
+### 4. Run the Streamlit app
+```bash
+cd heart_attack_predictor
+streamlit run app.py
+```
+
+
+
+
