@@ -38,7 +38,7 @@ Sourced from [Kaggle](https://www.kaggle.com/datasets/fatemehmohammadinia/heart-
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/heart_attack_predictor.git
+git clone https://github.com/Hasan-Uddin/HeartAttackPredictionUsingML-App.git
 cd heart_attack_predictor
 ```
 ### 2. Install dependencies
