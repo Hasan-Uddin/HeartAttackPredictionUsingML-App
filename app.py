@@ -18,16 +18,19 @@ page = st.sidebar.radio("Navigation", ["Heart Attack Predictor", "About"])
 # --- Prediction Page ---
 if page == "Heart Attack Predictor":
     st.title("💓 Heart Attack Risk Predictor")
-
+    
     # --- User Inputs ---
-    age = st.slider("Age", 20, 100)
-    gender = st.selectbox("Gender", ["Male", "Female"])
-    heart_rate = st.number_input("Heart Rate (bpm)", min_value=40.0, format="%.3f", step=0.001)
-    sys_bp = st.number_input("Systolic BP", min_value=70.0, format="%.3f", step=0.001)
-    dia_bp = st.number_input("Diastolic BP", min_value=40.0, format="%.3f", step=0.001)
-    sugar = st.number_input("Blood Sugar (mg/dL)", format="%.3f", step=0.001)
-    ckmb = st.number_input("CK-MB", format="%.3f", step=0.001)
-    troponin = st.number_input("Troponin", format="%.3f", step=0.001)
+    col1, col2 = st.columns([10, 10])
+    with col1:
+        age = st.number_input("Age", min_value=5, step=1)
+        gender = st.selectbox("Gender", ["Male", "Female"])
+        heart_rate = st.number_input("Heart Rate (bpm)", min_value=40.0, format="%.3f", step=0.001)
+        sys_bp = st.number_input("Systolic BP", min_value=70.0, format="%.3f", step=0.001)
+    with col2:
+        dia_bp = st.number_input("Diastolic BP", min_value=40.0, format="%.3f", step=0.001)
+        sugar = st.number_input("Blood Sugar (mg/dL)", format="%.3f", step=0.001)
+        ckmb = st.number_input("CK-MB", format="%.3f", step=0.001)
+        troponin = st.number_input("Troponin", format="%.3f", step=0.001)
 
     # --- Prediction ---
     if st.button("Predict"):
