@@ -44,9 +44,9 @@ if page == "Heart Attack Predictor":
         risk_percent = risk_level * 100
 
         if prediction == 1:
-            st.subheader(f"⚠️ At Risk of Heart Attack! (Risk Level: {risk_percent:.2f}%)")
+            st.error(f"⚠️ At Risk of Heart Attack! (Risk Level: {risk_percent:.2f}%)")
         else:
-            st.subheader(f"✅ No Immediate Risk (Risk Level: {risk_percent:.2f}%)")
+            st.success(f"✅ No Immediate Risk (Risk Level: {risk_percent:.2f}%)")
 
 
 # --- About Page ---
