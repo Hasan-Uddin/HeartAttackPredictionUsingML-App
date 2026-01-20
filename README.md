@@ -5,6 +5,8 @@ A machine learning-powered web application that predicts a patient's risk of hav
 ## 🧠 Project Overview
 
 This application takes in medical inputs such as age, blood pressure, heart rate, and cardiac enzyme levels to estimate the likelihood of a heart attack using a trained Random Forest model. The web interface is built using Streamlit.
+## DEMO [LINK](https://heartattackpredictionusingml-app.streamlit.app/)
+<img width="1366" height="698" alt="image" src="https://github.com/user-attachments/assets/c034fe39-818c-4083-ba07-9fde8d9b4fb4" />
 
 ## 📁 Folder Structure
 <p>
